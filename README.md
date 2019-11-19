@@ -1,6 +1,6 @@
 # OSLAB
 
-Lab exercises for the 8th semester course [Operating Systems Laboratory (ECE-NTUA)](http://www.cslab.ece.ntua.gr/courses/compsyslab/).
+Lab exercises for the 8th semester course [Operating Systems Laboratory (ECE-NTUA, 2017-2018)](http://www.cslab.ece.ntua.gr/courses/compsyslab/).
 
 ## Contributors
 
