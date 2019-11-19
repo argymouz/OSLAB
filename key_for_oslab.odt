@@ -1,0 +1,12 @@
+﻿IP: 83.212.103.161
+
+Σύνδεση στον ωκεανό είτε με ssh user@83.212.103.161 
+είτε με ssh user@snf-822055.vm.okeanos.grnet.gr.
+
+Password για user: VBmleG0u09
+
+Έχοντας συνδεθεί ως user, κάνουμε su για να γίνουμε root και βάζουμε κωδικό Mouz@ki514.
+
+Για να συνδεθούμε στο utopia: ανοίγουμε το vm στον ωκεανό και πάμε στο directory /home/user/utopia. Ανοίγουμε tmux και δημιουργούμε δύο παράθυρα. Στο πρώτο τρέχουμε το utopia.sh. Στο δεύτερο κάνουμε ssh -p 22223 user@localhost ή root@localhost, ανάλογα ως τι από τα δύο θέλουμε να συνδεθούμε. Οι κωδικοί είναι user και root, αντίστοιχα.
+
+Για να πάρουμε μετρήσεις, κάνουμε sshfs -o nonempty -o allow_other user@10.0.2.2:/home/user /home/user/host. Μετά, πηγαίνουμε στο directory /home/user/host/ask2/lunix-tng-helpcode-20180326. Κάνουμε make (τυπικά, χρειάζεται μόνο άμα έχουν γίνει αλλαγές), μετά insmod lunix.ko, μετά ./lunix_dev_nodes.sh. Βάζουμε την εντολή ./lunix-attach /dev/ttyS0 να τρέχει στο background και κάνουμε πχ cat /dev/lunix0-temp.
